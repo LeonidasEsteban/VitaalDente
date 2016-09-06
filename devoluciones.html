@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>By Anthony</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Dancing+Script:700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<link rel="stylesheet" href="css/arf.css"/>
+    	<link href='https://fonts.googleapis.com/css?family=Forum|Poiret+One' rel='stylesheet' type='text/css'>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script src="jquery.smooth-scroll.min.js"></script>
+    	<script src="waypoints.min.js"></script>
+    	<script type="text/javascript">    
+                                                                                                    $(function(){
+                                                                                                        $('a.smoothScroll').smoothScroll({
+                                                                                                          offset: -80,		  
+                                                                                                		  scrollTarget: $(this).val()
+                                                                                                	   });
+                                                                                                       
+                                                                                                       // Waypoints
+                                                                                                       $('.post_article').waypoint(  
+                                                                                                        function(direction) {
+                                                                                                        if (direction ==='down') {            
+                                                                                                            var wayID = $(this).attr('id');            
+                                                                                                        } else {
+                                                                                                            var previous = $(this).prev();
+                                                                                                            var wayID = $(previous).attr('id');                    
+                                                                                                        }
+                                                                                                            $('.current').removeClass('current');
+                                                                                                            $('#main_nav a[href=#'+wayID+']').addClass('current');
+                                                                                                        }, { offset: '40%' });   
+                                                                                                       
+                                                                                                    });
+                                                                                                    </script>  
+</head>
+<body>
+<header id="head">
+    <figure class="logotipo"> <!-- logotipo -->
+        <img src="images/logo.png" width="600" height="110" alt="Invie logotipo"/>
+    </figure>
+    <nav class="menu"> 
+        <ul> 
+            <li><a class="smoothScroll" href="#">Home</a></li>
+            <li><a class="smoothScroll" href="index.html">Inspiration</a></li>
+            <li><a class="smoothScroll" href="index.html">Collection</a></li>
+            <li><a class="smoothScroll" href="index.html">Exclusive collection</a></li>
+            <li><a class="smoothScroll" href="index.html">My account</a></li>
+            <li><a class="smoothScroll" href="about.html">About</a></li>
+        </ul>
+    </nav> 
+</header>
+<div class="text">
+	<p>Devoluciones</p>
+<hr>
+	<div class="subtext">
+<br>
+		<p>Únicamente se admiten devoluciones si el producto sufre un defecto de fábrica (producto defectuoso). Deberás seguir los siguientes pasos para hacer la devolución: </p> <br>
+
+		<p>– El cliente dispone de 14 días laborables para ejercitar el derecho de devolución. </p><br>
+		<p>– El cliente debe exponer el motivo de la devolución mediante un email a info@lavitaaldente.com IMPORTANTE: Adjuntar foto del producto.</p><br>
+		<p>– Vita al Dente® se responsabiliza de los costes asociados a esta devolución. Vita al Dente se reserva el derecho de retener el reembolso hasta recibir el producto.</p><br>
+	</div>
+	
+	<p>Cambios</p>
+	<hr>
+	<div class="subtext">
+<br>
+	<p>En el caso de cambiar el producto por color,  talla u otras características, que sean debidos a un cambio de opinión o error por parte del cliente a la hora de hacer la compra, este se responsabilizará de que el producto llegue en perfecto estado, en un plazo no superior a 14 días laborables desde la realización de la compra. </p><br>
+	Vita al Dente® enviará el producto seleccionado, al cliente una vez esten todos los PAGOS recibidos. El cliente será quien asuma el coste directo de los envios del producto. </p>
+
+	Cualquier duda, enviar un correo electrónico a info@vitaaldente.com en un plazo de 24h tendrás respuesta. <br><br>Gracias, atentamente dirección de Vita al Dente®.
+	</div>
+</div>
+ <hr>
+ <footer class="footer">
+    <h4 class="footer-tittle">Línea de atención al cliente 684 044 776.</h4>
+    <nav class="footer-links"> 
+        <h4 class="info">SERVICIOS</h4>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">FaQ</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Política de envíos</a></li>
+            <li><a href="#">Promociones</a></li>
+        <h4 class="info">SOBRE EL SITIO</h4>
+            <li><a href="#">Tratamiento de datos personales</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li><a href="#">Ganadores Sorteo Outfit Barcelona</a></li>
+            <li><a href="#">Sorteo Outifit Marrakecth</a></li>
+    </nav> 
+ <p class="footer-company-name">All rights reserved | La vita al Dente by Anthony Ferrer®</p>
+ </footer>
+</body>
+</html>
